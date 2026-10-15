@@ -1,0 +1,21 @@
+# Simulate the survey of a meadow site which has 30% cover of a plant species
+
+
+# Set up the site (1 = plant present, 0 = absent)
+meadow <- sample(c(1, 0),
+                 size = 10000,
+                 replace = TRUE,
+                 prob = c(0.3, 0.7))
+
+# Monte Carlo sample of 100 quadrats
+sampled_points <- replicate(1000, {
+  mean(sample(meadow, 100))  })
+
+hist(sampled_points, main = NULL,
+     xlab = "Estimated proportion of site", breaks = 30)
+
+# Estimate coverage
+estimated_coverage <- mean(sampled_points)
+
+cat("Estimated plant coverage:",
+    round(estimated_coverage * 100, 1), "%\n")
