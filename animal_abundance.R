@@ -57,9 +57,18 @@ hist(compost_sim,
 
 ## 4. Examples of common errors
 ## a. case-sensitivity
-# Worms
+# Worms   # uncomment this line to run the error
 ## b. closing bracket
-# mean(compost_sim
+# mean(compost_sim   # uncomment this line to run the error
+
+
+
+## 5. Example of installing and loading a package
+install.packages('fortunes')
+library('fortunes')
+
+fortune()
+
 
 
 
