@@ -2,6 +2,7 @@
 # to estimate abundance of animals per site
 
 
+
 ## 1. Assume that the number of animals in the sample is the same everywhere else
 
 # Input abundance found in sample
@@ -19,6 +20,7 @@ worms
 compost <- 100 * worms
 # Display the result
 compost
+
 
 
 ## 2. Do a simulation instead
@@ -45,6 +47,18 @@ hist(compost_sim,
      main = "Simulation of 10 000 samples",
      xlab = "Number of animals", breaks = 100)
 
+
+
+## 3. Getting help in R
+?mean
+
+
+
+## 4. Examples of common errors
+## a. case-sensitivity
+# Worms
+## b. closing bracket
+# mean(compost_sim
 
 
 
