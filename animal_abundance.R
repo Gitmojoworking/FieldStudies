@@ -50,6 +50,7 @@ hist(compost_sim,
 
 
 ## 3. Getting help in R
+?range
 ?mean
 
 
