@@ -17,7 +17,7 @@ worms
 
 # Multiply "worms" by 100 and store the result in the variable "compost"
 compost <- 100 * worms
-# Display the value of compost
+# Display the result
 compost
 
 
@@ -35,7 +35,7 @@ compost_sim <- 100 * worms_sim
 # a quick look at what that multiplication has produced
 compost_sim 
 
-# Look at the simulated results
+# Look at the simulated result
 mean(compost_sim)
 sd(compost_sim)
 range(compost_sim)
